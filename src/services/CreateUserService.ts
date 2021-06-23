@@ -23,11 +23,10 @@ class CreateUserService {
             throw new Error('User already exists')
         }
 
-        const user = userRepository.create({
-            name, email, admin
-        })
+        const user = userRepository.create({ name, email, admin })
 
         await userRepository.save(user)
+
         return user
     }
 }
