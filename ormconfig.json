@@ -1,8 +1,16 @@
 {
-  "type": "sqlite",
-  "database": "src/database/database.sqlite",
-  "migrations": ["src/database/migrations/*.ts"],
-  "entities": ["src/entity/*.ts"],
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "",
+  "database": "nlwvaloriza",
+  "migrations": [
+    "src/database/migrations/*.ts"
+  ],
+  "entities": [
+    "src/entity/*.ts"
+  ],
   "cli": {
     "migrationsDir": "src/database/migrations/",
     "entitiesDir": "src/entity"
